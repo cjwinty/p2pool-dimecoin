@@ -13,7 +13,7 @@ from p2pool import data, node, work
 from p2pool.bitcoin import data as bitcoin_data, networks, worker_interface
 from p2pool.util import deferral, jsonrpc, math, variable
 
-class bitcoind(object): # can be used as p2p factory, p2p protocol, or rpc jsonrpc proxy
+class dimecoind(object): # can be used as p2p factory, p2p protocol, or rpc jsonrpc proxy
     def __init__(self):
         self.blocks = [0x000000000000016c169477c25421250ec5d32cf9c6d38538b5de970a2355fd89]
         self.headers = {0x16c169477c25421250ec5d32cf9c6d38538b5de970a2355fd89: {
@@ -148,10 +148,10 @@ mynet = math.Object(
 class MiniNode(object):
     @classmethod
     @defer.inlineCallbacks
-    def start(cls, net, factory, bitcoind, peer_ports, merged_urls):
+    def start(cls, net, factory, dimecoind, peer_ports, merged_urls):
         self = cls()
         
-        self.n = node.Node(factory, bitcoind, [], [], net)
+        self.n = node.Node(factory, dimecoind, [], [], net)
         yield self.n.start()
         
         self.n.p2p_node = node.P2PNode(self.n, port=0, max_incoming_conns=1000000, addr_store={}, connect_addrs=[('127.0.0.1', peer_port) for peer_port in peer_ports])
@@ -175,7 +175,7 @@ class MiniNode(object):
 class Test(unittest.TestCase):
     @defer.inlineCallbacks
     def test_node(self):
-        bitd = bitcoind()
+        bitd = dimecoind()
         
         mm_root = resource.Resource()
         mm_root.putChild('', jsonrpc.HTTPServer(mm_provider))
@@ -223,7 +223,7 @@ class Test(unittest.TestCase):
         N = 3
         SHARES = 600
         
-        bitd = bitcoind()
+        bitd = dimecoind()
         
         nodes = []
         for i in xrange(N):

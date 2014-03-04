@@ -18,7 +18,7 @@ nets = dict(
     ###          gets every third block it's around 90 minutes, means a better distribution of
     ###          earnings, but newer miners will take some time to build up the income.
     dimecoin=math.Object(
-        PARENT=networks.nets['quarkcoin'],
+        PARENT=networks.nets['dimecoin'],
         SHARE_PERIOD=15, # seconds
         NEW_SHARE_PERIOD=15, # seconds
         CHAIN_LENGTH=24*60*60//10, # shares
@@ -38,7 +38,7 @@ nets = dict(
         VERSION_CHECK=lambda v: True,
     ),
     dimecoin_testnet=math.Object(
-        PARENT=networks.nets['quarkcoin_testnet'],
+        PARENT=networks.nets['dimecoin_testnet'],
         SHARE_PERIOD=15, # seconds
         NEW_SHARE_PERIOD=15, # seconds
         CHAIN_LENGTH=24*60*60//10, # shares
@@ -58,8 +58,8 @@ nets = dict(
         VERSION_CHECK=lambda v: True,
     ),
     ### Neisklar: that local one was a local testnet
-    #quarkcoin_local=math.Object(
-        #PARENT=networks.nets['quarkcoin_local'],
+    #dimecoin_local=math.Object(
+        #PARENT=networks.nets['dimecoin_local'],
         #SHARE_PERIOD=15, # seconds
         #NEW_SHARE_PERIOD=15, # seconds
         #CHAIN_LENGTH=24*60*60//10, # shares

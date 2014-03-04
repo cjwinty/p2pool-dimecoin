@@ -226,8 +226,7 @@ def average_attempts_to_target(average_attempts):
 def target_to_difficulty(target):
     assert 0 <= target and isinstance(target, (int, long)), target
     if target >= 2**256: warnings.warn('target >= 2**256!')
-    ###CJWinty: Changes for Dimecoin and code cleanup.
-	    return (0xffff0000 * 2**(256-64) + 1)/(target + 1)
+    return (0xffff0000 * 2**(256-64) + 1)/(target + 1)
 
 def difficulty_to_target(difficulty):
     assert difficulty >= 0

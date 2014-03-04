@@ -1,0 +1,198 @@
+2014-03-04 11:44:17.545000 p2pool (version 8252c49)
+2014-03-04 11:44:17.546000 
+2014-03-04 11:44:17.546000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 11:44:17.736000     ...success!
+2014-03-04 11:44:17.737000     Current block hash: d132982a8a376c5751bac1f44df1a8b6cafe4cf70d495f8c64ad3cc
+2014-03-04 11:44:17.738000     Current block height: 212184
+2014-03-04 11:44:17.739000 
+2014-03-04 11:44:17.739000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 11:44:17.954000     ...success!
+2014-03-04 11:44:17.954000 
+2014-03-04 11:44:17.955000 Determining payout address...
+2014-03-04 11:44:17.956000     Getting payout address from dimecoind...
+2014-03-04 11:44:18.011000 > Fatal error:
+2014-03-04 11:44:18.012000 > Traceback (most recent call last):
+2014-03-04 11:44:18.012000 >   File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 11:44:18.013000 >     self._runCallbacks()
+2014-03-04 11:44:18.014000 >   File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 11:44:18.014000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 11:44:18.015000 >   File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 11:44:18.016000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 11:44:18.016000 >   File "C:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 11:44:18.017000 >     result = g.send(result)
+2014-03-04 11:44:18.017000 > --- <exception caught here> ---
+2014-03-04 11:44:18.018000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 11:44:18.019000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 11:44:18.019000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 11:44:18.020000 >     raise ValueError('address not for this net!')
+2014-03-04 11:44:18.020000 > exceptions.ValueError: address not for this net!
+2014-03-04 11:56:15.733000 p2pool (version 8252c49)
+2014-03-04 11:56:15.734000 
+2014-03-04 11:56:15.734000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 11:56:15.827000     ...success!
+2014-03-04 11:56:15.827000     Current block hash: 192e82d511f9873513a922ca5f5b9796bffb166f5e254615bcf6cce
+2014-03-04 11:56:15.828000     Current block height: 212191
+2014-03-04 11:56:15.829000 
+2014-03-04 11:56:15.831000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 11:56:15.901000     ...success!
+2014-03-04 11:56:15.901000 
+2014-03-04 11:56:15.902000 Determining payout address...
+2014-03-04 11:56:15.903000     Loaded cached address: 7CgACfuYGyWpYVXesGrWMYbEJPb2odaRfs...
+2014-03-04 11:56:15.919000 > Fatal error:
+2014-03-04 11:56:15.919000 > Traceback (most recent call last):
+2014-03-04 11:56:15.920000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 11:56:15.921000 >     self._runCallbacks()
+2014-03-04 11:56:15.921000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 11:56:15.922000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 11:56:15.922000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 11:56:15.923000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 11:56:15.923000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 11:56:15.924000 >     result = g.send(result)
+2014-03-04 11:56:15.924000 > --- <exception caught here> ---
+2014-03-04 11:56:15.925000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 11:56:15.926000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 11:56:15.929000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 11:56:15.930000 >     raise ValueError('address not for this net!')
+2014-03-04 11:56:15.931000 > exceptions.ValueError: address not for this net!
+2014-03-04 11:58:07.828000 p2pool (version 8252c49)
+2014-03-04 11:58:07.828000 
+2014-03-04 11:58:07.828000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 11:58:07.899000     ...success!
+2014-03-04 11:58:07.899000     Current block hash: 192e82d511f9873513a922ca5f5b9796bffb166f5e254615bcf6cce
+2014-03-04 11:58:07.900000     Current block height: 212191
+2014-03-04 11:58:07.900000 
+2014-03-04 11:58:07.900000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 11:58:08.052000     ...success!
+2014-03-04 11:58:08.052000 
+2014-03-04 11:58:08.052000 Determining payout address...
+2014-03-04 11:58:08.053000     Loaded cached address: 7CgACfuYGyWpYVXesGrWMYbEJPb2odaRfs...
+2014-03-04 11:58:08.068000 > Fatal error:
+2014-03-04 11:58:08.094000 > Traceback (most recent call last):
+2014-03-04 11:58:08.103000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 11:58:08.103000 >     self._runCallbacks()
+2014-03-04 11:58:08.103000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 11:58:08.104000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 11:58:08.104000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 11:58:08.105000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 11:58:08.105000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 11:58:08.127000 >     result = g.send(result)
+2014-03-04 11:58:08.130000 > --- <exception caught here> ---
+2014-03-04 11:58:08.131000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 11:58:08.133000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 11:58:08.138000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 11:58:08.142000 >     raise ValueError('address not for this net!')
+2014-03-04 11:58:08.144000 > exceptions.ValueError: address not for this net!
+2014-03-04 12:08:36.453000 p2pool (version 8252c49)
+2014-03-04 12:08:36.453000 
+2014-03-04 12:08:36.453000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 12:08:36.539000     ...success!
+2014-03-04 12:08:36.539000     Current block hash: 65c7522267bc0ff8b49f4c932455746289edbdc7ef02e546f8553b3
+2014-03-04 12:08:36.540000     Current block height: 212202
+2014-03-04 12:08:36.540000 
+2014-03-04 12:08:36.540000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 12:08:36.758000     ...success!
+2014-03-04 12:08:36.758000 
+2014-03-04 12:08:36.759000 Determining payout address...
+2014-03-04 12:08:36.760000     Loaded cached address: 7PfUaXBVc8V8Vm7rXY3tzfSnuCigzsv8R5...
+2014-03-04 12:08:36.776000     Cached address is either invalid or not controlled by local dimecoind!
+2014-03-04 12:08:36.777000     Getting payout address from dimecoind...
+2014-03-04 12:08:36.791000 > Fatal error:
+2014-03-04 12:08:36.791000 > Traceback (most recent call last):
+2014-03-04 12:08:36.792000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 12:08:36.793000 >     self._runCallbacks()
+2014-03-04 12:08:36.793000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 12:08:36.794000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 12:08:36.794000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 12:08:36.795000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 12:08:36.795000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 12:08:36.796000 >     result = g.send(result)
+2014-03-04 12:08:36.796000 > --- <exception caught here> ---
+2014-03-04 12:08:36.797000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 12:08:36.797000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 12:08:36.798000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 12:08:36.798000 >     raise ValueError('address not for this net!')
+2014-03-04 12:08:36.799000 > exceptions.ValueError: address not for this net!
+2014-03-04 12:45:24.874000 p2pool (version 8252c49)
+2014-03-04 12:45:24.875000 
+2014-03-04 12:45:24.875000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 12:45:25.032000     ...success!
+2014-03-04 12:45:25.032000     Current block hash: 10a944cfe3128d305929360b5c9ebf72392fd703a2f5bd6488a6a188
+2014-03-04 12:45:25.032000     Current block height: 212228
+2014-03-04 12:45:25.032000 
+2014-03-04 12:45:25.033000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 12:45:25.246000     ...success!
+2014-03-04 12:45:25.246000 
+2014-03-04 12:45:25.246000 Determining payout address...
+2014-03-04 12:45:25.247000     Loaded cached address: 7CgACfuYGyWpYVXesGrWMYbEJPb2odaRfs...
+2014-03-04 12:45:25.262000 > Fatal error:
+2014-03-04 12:45:25.262000 > Traceback (most recent call last):
+2014-03-04 12:45:25.262000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 12:45:25.263000 >     self._runCallbacks()
+2014-03-04 12:45:25.263000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 12:45:25.263000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 12:45:25.263000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 12:45:25.263000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 12:45:25.264000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 12:45:25.264000 >     result = g.send(result)
+2014-03-04 12:45:25.264000 > --- <exception caught here> ---
+2014-03-04 12:45:25.264000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 12:45:25.264000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 12:45:25.265000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 12:45:25.265000 >     raise ValueError('address not for this net!')
+2014-03-04 12:45:25.265000 > exceptions.ValueError: address not for this net!
+2014-03-04 12:56:42.757000 p2pool (version 8252c49)
+2014-03-04 12:56:42.758000 
+2014-03-04 12:56:42.759000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 12:56:42.839000     ...success!
+2014-03-04 12:56:42.840000     Current block hash: cad6e02eaa46c8f92391d8ee72a0d96d8093a23a823aba8024e0321
+2014-03-04 12:56:42.841000     Current block height: 212238
+2014-03-04 12:56:42.842000 
+2014-03-04 12:56:42.842000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 12:56:43.054000     ...success!
+2014-03-04 12:56:43.055000 
+2014-03-04 12:56:43.055000 Determining payout address...
+2014-03-04 12:56:43.056000     Loaded cached address: 7CgACfuYGyWpYVXesGrWMYbEJPb2odaRfs...
+2014-03-04 12:56:43.073000 > Fatal error:
+2014-03-04 12:56:43.105000 > Traceback (most recent call last):
+2014-03-04 12:56:43.107000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 12:56:43.108000 >     self._runCallbacks()
+2014-03-04 12:56:43.109000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 12:56:43.109000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 12:56:43.110000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 12:56:43.110000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 12:56:43.111000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 12:56:43.112000 >     result = g.send(result)
+2014-03-04 12:56:43.112000 > --- <exception caught here> ---
+2014-03-04 12:56:43.113000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 12:56:43.113000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 12:56:43.114000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 12:56:43.115000 >     raise ValueError('address not for this net!')
+2014-03-04 12:56:43.115000 > exceptions.ValueError: address not for this net!
+2014-03-04 13:04:36.977000 p2pool (version 8252c49)
+2014-03-04 13:04:36.978000 
+2014-03-04 13:04:36.978000 Testing dimecoind RPC connection to 'http://127.0.0.1:11930/' with username 'dimecoinrpc'...
+2014-03-04 13:04:37.044000     ...success!
+2014-03-04 13:04:37.047000     Current block hash: 81d39e9567522ff104e7d4204a2011e8a4ae4d4e0365b8cb87a2ab
+2014-03-04 13:04:37.048000     Current block height: 212243
+2014-03-04 13:04:37.048000 
+2014-03-04 13:04:37.048000 Testing dimecoind P2P connection to '127.0.0.1:11931'...
+2014-03-04 13:04:37.383000     ...success!
+2014-03-04 13:04:37.385000 
+2014-03-04 13:04:37.385000 Determining payout address...
+2014-03-04 13:04:37.387000     Loaded cached address: 7CgACfuYGyWpYVXesGrWMYbEJPb2odaRfs...
+2014-03-04 13:04:37.400000 > Fatal error:
+2014-03-04 13:04:37.401000 > Traceback (most recent call last):
+2014-03-04 13:04:37.401000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 490, in _startRunCallbacks
+2014-03-04 13:04:37.401000 >     self._runCallbacks()
+2014-03-04 13:04:37.401000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 577, in _runCallbacks
+2014-03-04 13:04:37.415000 >     current.result = callback(current.result, *args, **kw)
+2014-03-04 13:04:37.425000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1155, in gotResult
+2014-03-04 13:04:37.426000 >     _inlineCallbacks(r, g, deferred)
+2014-03-04 13:04:37.426000 >   File "c:\Python27\lib\site-packages\twisted\internet\defer.py", line 1099, in _inlineCallbacks
+2014-03-04 13:04:37.426000 >     result = g.send(result)
+2014-03-04 13:04:37.426000 > --- <exception caught here> ---
+2014-03-04 13:04:37.427000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\main.py", line 95, in main
+2014-03-04 13:04:37.427000 >     my_pubkey_hash = bitcoin_data.address_to_pubkey_hash(address, net.PARENT)
+2014-03-04 13:04:37.427000 >   File "C:\Users\Colin Winterborne\Documents\GitHub\p2pool-dimecoin\p2pool\bitcoin\data.py", line 262, in address_to_pubkey_hash
+2014-03-04 13:04:37.427000 >     raise ValueError('address not for this net!')
+2014-03-04 13:04:37.428000 > exceptions.ValueError: address not for this net!
