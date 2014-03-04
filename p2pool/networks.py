@@ -17,7 +17,7 @@ nets = dict(
     ###          with a relativly low difficulty, so maybe 60, which when we assume the pool 
     ###          gets every third block it's around 90 minutes, means a better distribution of
     ###          earnings, but newer miners will take some time to build up the income.
-    quarkcoin=math.Object(
+    dimecoin=math.Object(
         PARENT=networks.nets['quarkcoin'],
         SHARE_PERIOD=15, # seconds
         NEW_SHARE_PERIOD=15, # seconds
@@ -28,16 +28,16 @@ nets = dict(
         NEW_SPREAD=30, # blocks
         IDENTIFIER='fc70135c7a81bc6f'.decode('hex'),
         PREFIX='9472ef181efcd37b'.decode('hex'),
-        P2P_PORT=8371,
+        P2P_PORT=11931,
         MIN_TARGET=0,
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
-        WORKER_PORT=8372,
+        WORKER_PORT=11930,
         BOOTSTRAP_ADDRS=''.split(' '),
         #ANNOUNCE_CHANNEL='#p2pool',
         VERSION_CHECK=lambda v: True,
     ),
-    quarkcoin_testnet=math.Object(
+    dimecoin_testnet=math.Object(
         PARENT=networks.nets['quarkcoin_testnet'],
         SHARE_PERIOD=15, # seconds
         NEW_SHARE_PERIOD=15, # seconds
@@ -48,11 +48,11 @@ nets = dict(
         NEW_SPREAD=30, # blocks
         IDENTIFIER='fc70235c7a81bc6f'.decode('hex'),
         PREFIX='8472ef181efcd37b'.decode('hex'),
-        P2P_PORT=18371,
+        P2P_PORT=18331,
         MIN_TARGET=0,
         MAX_TARGET=2**256//2**20 - 1,
         PERSIST=False,
-        WORKER_PORT=18372,
+        WORKER_PORT=18332,
         BOOTSTRAP_ADDRS=''.split(' '),
         #ANNOUNCE_CHANNEL='#p2pool',
         VERSION_CHECK=lambda v: True,
